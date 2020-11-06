@@ -1,0 +1,30 @@
+package iss.soa.temperatureService.model;
+
+import java.util.ArrayList;
+
+public class RoomTemperature {
+	
+	public class Window {
+		int id;
+		boolean state;
+		
+		public Window(int id) {
+			this.id = id;
+			this.state = false; // Window is closed by default
+		}
+	}
+	
+	public class Radiator {
+		int id;
+		boolean state;
+		
+		public Radiator(int id) {
+			this.id = id;
+			this.state = false; // Radiator is turned off by default
+		}
+	}
+	
+	private int id;
+	private ArrayList<Window> wList;
+	private ArrayList<Radiator> rList;
+}

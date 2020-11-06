@@ -1,0 +1,5 @@
+package iss.soa.temperatureService.model;
+
+public class RoomTemperature {
+
+}

@@ -1,0 +1,15 @@
+package iss.soa.temperatureService;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@RestController
+public class TemperatureResource {
+	
+	@GetMapping("/temperature")
+	public int temperatureValue() {
+		int temperature = 25;
+		return temperature;
+	}
+	
+}
