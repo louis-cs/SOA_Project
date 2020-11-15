@@ -5,54 +5,8 @@ import java.util.HashMap;
 
 public class RoomLight {
 	
-	public class LightSensor {
-		private int id;
-		private int lightValue;
-		
-		public LightSensor(int id) {
-			this.id = id;
-			this.lightValue = 300;
-		}
-		
-		public int getId() {
-			return this.id;
-		}
-		
-		public int getLightValue() {
-			return this.lightValue;
-		}
-	}
-	
-	public class Light {
-		private int id;
-		private boolean state;
-		
-		public Light(int id) {
-			this.id = id;
-			this.state = false;
-		}
-		
-		public int getId() {
-			return this.id;
-		}
-		
-		public boolean getState() {
-			return this.state;
-		}
-		
-		public void changeState() {
-			if ( this.state == true ) {
-				this.state = false;
-			}
-			else {
-				this.state = true;
-			}
-		}
-		
-	}
-	
 	private int id;
-	private LightSensor sensor = new LightSensor(0);
+	private LightSensor sensor;
 	private ArrayList<Light> lList = new ArrayList<Light>();
 	
 	
@@ -63,6 +17,8 @@ public class RoomLight {
 	
 	public RoomLight(int id) {
 		this.id = id;
+		
+		this.sensor = new LightSensor(0);
 		
 		// Let's add 3 lights
 		lList.add(new Light(0));
@@ -88,7 +44,7 @@ public class RoomLight {
 		return list;
 	}
 	
-	/*-------------------Setters-------------------*/
+	/*-------------------Methods-------------------*/
 	public void changeLightState(int id) {
 		for (int i = 0 ; i < lList.size() ; i++) {
 			if ( id == lList.get(i).getId() ) {

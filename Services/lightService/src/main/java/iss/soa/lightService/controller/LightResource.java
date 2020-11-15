@@ -12,15 +12,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class LightResource {
 	
 	/**
-	 * Return the state of a light in a room
-	 * @return an boolean 
-	 */
-	@GetMapping("/light")
-	public boolean lightState() {
-		return true;
-	}
-	
-	/**
 	 * Return a RoomLight matching the id
 	 * @param id
 	 * @return a RoomLight
