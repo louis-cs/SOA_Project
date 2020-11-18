@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 public class LightResource {
 	
+	private RoomLight room = new RoomLight(0);
+	
 	/**
 	 * Return a RoomLight matching the id
 	 * @param id
@@ -18,8 +20,8 @@ public class LightResource {
 	 */
 	@GetMapping(value = "/{id}")
 	public RoomLight infosRoom(@PathVariable int id) {
-		RoomLight room = new RoomLight(id);
-		return room;
+		//RoomLight room = new RoomLight(id);
+		return this.room;
 	}
 	
 	/**
@@ -29,8 +31,8 @@ public class LightResource {
 	 */
 	@PutMapping(value = "/{id}/{iLight}")
 	public RoomLight lightStateChange(@PathVariable int id, @PathVariable int iLight) {
-		RoomLight room = new RoomLight(id);
-		room.changeLightState(iLight);
+		//RoomLight room = new RoomLight(id);
+		this.room.changeLightState(iLight);
 		return room;
 	}
 	

@@ -1,0 +1,1641 @@
+[2020-11-18 16:44:20,578 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-18 16:44:20,578 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-18 16:44:21,511 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-18 16:44:21,511 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-18 16:44:21,808 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-18 16:44:21,812 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+System property [bundles.configuration.location] is not defined.
+[2020-11-18 16:44:21,813 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using default configurations location [configurations].
+[2020-11-18 16:44:21,816 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using configuration from [configurations]
+[2020-11-18 16:44:21,817 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Directory [configurations\factories] does not exist.
+[2020-11-18 16:44:21,818 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+System property [bundles.configuration.location] is not defined.
+[2020-11-18 16:44:21,818 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using default configurations location [configurations].
+[2020-11-18 16:44:21,818 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using configuration from [configurations]
+[2020-11-18 16:44:21,818 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Directory [configurations\factories] does not exist.
+[2020-11-18 16:44:21,837 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [lifx.basedriver]
+[2020-11-18 16:44:21,841 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [netatmo.sdt.driver]
+[2020-11-18 16:44:21,847 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [sdt.ipe]
+[2020-11-18 16:44:21,851 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [smarter.coffee]
+[2020-11-18 16:44:21,853 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-18 16:44:21,860 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-18 16:44:22,023 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-18 16:44:22,024 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-18 16:44:22,025 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-18 16:44:22,025 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-18 16:44:22,025 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-18 16:44:22,086 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-18 16:44:22,087 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-18 16:44:22,088 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-18 16:44:22,088 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-18 16:44:22,091 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2020-11-18 16:44:22,091 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2020-11-18 16:44:23,399 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-18 16:44:23,411 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-18 16:44:23,411 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-18 16:44:23,413 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-18 16:44:23,415 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-18 16:44:23,422 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create AccessControlPolicy resource
+[2020-11-18 16:44:23,449 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create CSEBase resource
+[2020-11-18 16:44:23,463 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Register CSE to another CSE.
+[2020-11-18 16:44:23,464 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-18 16:44:23,473 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-18 16:44:23,474 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2020-11-18 16:44:23,477 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=1,
+ to=http://127.0.0.1:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ ]
+[2020-11-18 16:44:23,477 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=1,
+ to=http://127.0.0.1:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ ]
+[2020-11-18 16:44:23,580 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: POST http://127.0.0.1:8080/~/in-cse HTTP/1.1
+[2020-11-18 16:44:23,582 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: 
+X-M2M-RI: 001
+X-M2M-Origin: admin:admin
+Content-Type: application/xml;ty=16
+
+[2020-11-18 16:44:23,836 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2001
+ requestIdentifier=001
+ to=admin:admin
+ from=/mn-cse
+ location=/in-cse/csr-985036059,
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:44:23,837 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2001
+ requestIdentifier=001
+ to=admin:admin
+ from=/mn-cse
+ location=/in-cse/csr-985036059,
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:44:23,839 INFO] - org.eclipse.om2m.core.CSEInitializer 
+response after registration: ResponsePrimitive [
+ responseStatusCode=2001
+ requestIdentifier=001
+ to=admin:admin
+ from=/mn-cse
+ location=/in-cse/csr-985036059,
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:44:23,847 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Successfully registered to in-cse
+[2020-11-18 16:44:23,859 INFO] - org.eclipse.om2m.core.remotecse.RemoteCseService 
+addRemoteCseAndPublish(cseId=/mn-cse/csr-117789642, name=in-name)
+[2020-11-18 16:44:23,859 INFO] - org.eclipse.om2m.core.remotecse.RemoteCseService 
+post Event to inform about RemoteCSE creation (cseId=in-cse, cseName=in-name)
+[2020-11-18 16:47:23,865 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 16:47:23,865 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:47:23,866 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:47:23,867 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 16:47:23,868 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 16:47:23,868 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 16:47:23,882 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:47:23,883 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:47:23,885 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 16:50:23,889 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 16:50:23,889 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:50:23,890 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:50:23,891 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 16:50:23,891 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 16:50:23,891 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 16:50:23,901 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:50:23,901 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:50:23,903 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 16:53:23,913 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 16:53:23,913 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:53:23,914 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:53:23,914 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 16:53:23,915 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 16:53:23,915 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 16:53:23,925 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:53:23,925 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:53:23,926 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 16:56:23,930 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 16:56:23,931 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:56:23,932 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:56:23,933 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 16:56:23,933 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 16:56:23,933 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 16:56:23,943 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:56:23,943 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:56:23,944 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 16:59:23,959 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 16:59:23,959 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:59:23,960 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 16:59:23,961 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 16:59:23,962 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 16:59:23,962 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 16:59:23,972 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:59:23,973 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 16:59:23,974 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:02:23,984 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:02:23,985 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:02:23,985 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:02:23,986 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:02:23,986 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:02:23,987 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:02:23,997 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:02:23,997 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:02:23,998 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:05:24,002 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:05:24,002 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:05:24,003 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:05:24,004 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:05:24,004 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:05:24,004 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:05:24,014 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:05:24,015 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:05:24,016 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:08:24,021 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:08:24,021 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:08:24,023 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:08:24,024 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:08:24,025 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:08:24,025 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:08:24,046 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:08:24,046 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:08:24,051 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:11:24,056 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:11:24,056 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:11:24,057 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:11:24,058 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:11:24,058 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:11:24,059 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:11:24,067 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:11:24,067 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:11:24,068 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:14:24,069 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:14:24,069 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:14:24,071 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:14:24,072 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:14:24,072 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:14:24,072 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:14:24,082 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:14:24,082 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:14:24,083 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:17:24,083 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:17:24,084 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:17:24,086 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:17:24,088 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:17:24,088 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:17:24,088 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:17:24,102 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:17:24,102 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:17:24,104 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:20:24,116 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:20:24,116 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:20:24,117 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:20:24,118 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:20:24,118 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:20:24,119 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:20:24,127 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:20:24,127 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:20:24,128 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:23:24,136 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:23:24,136 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:23:24,137 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:23:24,138 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:23:24,138 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:23:24,139 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:23:24,147 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:23:24,147 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:23:24,149 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:26:24,151 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:26:24,151 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:26:24,152 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:26:24,153 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:26:24,153 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:26:24,153 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:26:24,160 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:26:24,161 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:26:24,162 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:29:24,164 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:29:24,164 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:29:24,165 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:29:24,166 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:29:24,167 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:29:24,167 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:29:24,174 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:29:24,175 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:29:24,176 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:32:24,181 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:32:24,181 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:32:24,182 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:32:24,182 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:32:24,183 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:32:24,183 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:32:24,190 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:32:24,190 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:32:24,192 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:35:24,199 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:35:24,199 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:35:24,201 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:35:24,203 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:35:24,203 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:35:24,204 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:35:24,219 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:35:24,219 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:35:24,221 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:38:24,222 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:38:24,222 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:38:24,223 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:38:24,225 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:38:24,225 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:38:24,226 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:38:24,236 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:38:24,236 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:38:24,237 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:41:24,249 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:41:24,250 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:41:24,252 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:41:24,254 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:41:24,254 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:41:24,254 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:41:24,268 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:41:24,268 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:41:24,270 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
+[2020-11-18 17:44:24,273 INFO] - org.eclipse.om2m.core.CSEInitializer 
+check CSE registration
+[2020-11-18 17:44:24,273 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:44:24,274 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8080/~/in-cse/in-name/mn-name,
+ from=admin:admin,
+ resultContent=1,
+ returnContentType=application/xml,
+ ]
+[2020-11-18 17:44:24,274 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=1
+[2020-11-18 17:44:24,275 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8080/~/in-cse/in-name/mn-name?rcn=1 HTTP/1.1
+[2020-11-18 17:44:24,275 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: 
+
+[2020-11-18 17:44:24,282 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:44:24,283 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/mn-cse
+ contentType=application/xml;charset=UTF-8,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="mn-name">
+   <ty>16</ty>
+   <ri>/in-cse/csr-985036059</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164423</ct>
+   <lt>20201118T164423</lt>
+   <acpi>/in-cse/acp-301965269</acpi>
+   <poa>http://127.0.0.1:8282/</poa>
+   <cb>//om2m.org/mn-cse</cb>
+   <csi>/mn-cse</csi>
+   <rr>true</rr>
+</m2m:csr>
+
+]
+[2020-11-18 17:44:24,284 INFO] - org.eclipse.om2m.core.CSEInitializer 
+registration is good
