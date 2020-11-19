@@ -1639,3 +1639,81 @@ ResponsePrimitive [
 ]
 [2020-11-18 17:44:24,284 INFO] - org.eclipse.om2m.core.CSEInitializer 
 registration is good
+[2020-11-19 11:29:58,380 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-19 11:29:58,382 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-19 11:29:59,356 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-19 11:29:59,356 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-19 11:29:59,701 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-19 11:29:59,704 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+System property [bundles.configuration.location] is not defined.
+[2020-11-19 11:29:59,704 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using default configurations location [configurations].
+[2020-11-19 11:29:59,704 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using configuration from [configurations]
+[2020-11-19 11:29:59,704 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Directory [configurations\factories] does not exist.
+[2020-11-19 11:29:59,705 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+System property [bundles.configuration.location] is not defined.
+[2020-11-19 11:29:59,705 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using default configurations location [configurations].
+[2020-11-19 11:29:59,706 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Using configuration from [configurations]
+[2020-11-19 11:29:59,706 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Directory [configurations\factories] does not exist.
+[2020-11-19 11:29:59,727 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [lifx.basedriver]
+[2020-11-19 11:29:59,732 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [netatmo.sdt.driver]
+[2020-11-19 11:29:59,737 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [sdt.ipe]
+[2020-11-19 11:29:59,742 INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade 
+Register configuration [smarter.coffee]
+[2020-11-19 11:29:59,745 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-19 11:29:59,752 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-19 11:29:59,902 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-19 11:29:59,903 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-19 11:29:59,905 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-19 11:29:59,906 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-19 11:29:59,907 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-19 11:29:59,972 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-19 11:29:59,973 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-19 11:29:59,974 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-19 11:29:59,975 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-19 11:29:59,978 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2020-11-19 11:29:59,979 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2020-11-19 11:30:01,475 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-19 11:30:01,488 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-19 11:30:01,488 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-19 11:30:01,490 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-19 11:30:01,492 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-19 11:30:01,511 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-11-19 11:30:01,512 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-19 11:30:01,522 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-19 11:30:01,522 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
