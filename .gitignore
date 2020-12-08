@@ -1,3 +1,8 @@
 *.zip
 *.exe
 /bin/
+*.cfg
+*.info
+*.1
+*.out
+*.db
