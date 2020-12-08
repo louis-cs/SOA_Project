@@ -2,6 +2,7 @@ package iss.soa.lightService.controller;
 
 import iss.soa.lightService.model.RoomLight;
 
+import java.io.StringReader;
 import java.util.Arrays;
 import org.json.*;
 
@@ -14,6 +15,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.*;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.w3c.dom.Node;
+import org.w3c.dom.Element;
+
 @RestController
 public class LightResource {
 	
@@ -23,25 +32,34 @@ public class LightResource {
 	 * Trying to get value from OM2M
 	 */
 	@GetMapping
-	public String lightValue() {
+	public String[] lightValue() {
 		RestTemplate rt = new RestTemplate();
 		
 		HttpHeaders headers = new HttpHeaders();
 		// Set http request headers
+		headers.setAccept(Arrays.asList(new MediaType[] { MediaType.APPLICATION_XML }));
+		headers.setContentType(MediaType.APPLICATION_XML);
 		headers.set("x-m2m-origin", "admin:admin");
-		headers.set("Content-type", "application/xml");
+		//headers.set("Content-type", "application/xml");
 		HttpEntity<String> entity = new HttpEntity<String>(headers);
 		
 		String url = "http://127.0.0.1:8080/~/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la";
 		
 		ResponseEntity<String> response = rt.exchange(url, HttpMethod.GET, entity, String.class);
-		String ret = null;
-		String s = response.getBody();
-		String[] tokens = s.split(" ");
-		for (String t : tokens) {
-			ret+=t+"\r\n";
-		}
-		return ret;
+		String ret = response.getBody();
+		
+		String[] result = ret.split(" ");
+		/*for (int i = 0 ; i < result.length ; i++) {
+			System.out.printf(result[i]);
+		}*/
+		
+		System.out.println("--------------" + ret.contains("data&quot;val=&quot;"));
+		/*int i = ret.indexOf("data&quot;val=&quot;");
+		String sub = ret.substring(i);
+		int i2 = sub.indexOf("&");
+		sub = sub.substring(0, i2);
+		System.out.println(sub);*/
+		return result;
 	}
 	
 	/**
