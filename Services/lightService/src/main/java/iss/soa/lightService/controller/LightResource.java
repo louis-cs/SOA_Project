@@ -13,8 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import iss.soa.lightService.model.Mapper; 
 
 import org.eclipse.om2m.commons.resource.ContentInstance;
-import org.eclipse.om2m.commons.obix.Bool;
-import org.eclipse.om2m.commons.obix.Obj;
+import org.eclipse.om2m.commons.obix.*;
 import org.eclipse.om2m.commons.obix.io.*;
 
 
@@ -27,7 +26,7 @@ public class LightResource {
 	/**
 	 * Trying to get value from OM2M
 	 */
-	@GetMapping
+	@GetMapping(produces= MediaType.APPLICATION_JSON_VALUE)
 	public int lightValue() {
 		RestTemplate rt = new RestTemplate();
 		
@@ -43,24 +42,22 @@ public class LightResource {
 		ResponseEntity<String> response = rt.exchange(url, HttpMethod.GET, entity, String.class);
 		String resp = (String)response.getBody();
 		
-		System.out.println("---------------------" + "this is resp");
-		System.out.println(resp);
+		//System.out.println(resp);
 		
-		Mapper mapper = new Mapper();
-		
+		Mapper mapper = new Mapper();		
 		ContentInstance cin = (ContentInstance)mapper.unmarshal(resp);
-		System.out.println("------------------------------------");
-		System.out.println(cin.getContent());
-		System.out.println("------------------------------------");
-		Obj obj = ObixDecoder.fromString(cin.getContent());
-		System.out.println("+++++++++++++++++++"+obj.getObjGroup().get(2));
-		int obj1 = (int)obj.getObjGroup().get(2);
-		return obj1;
-		/*
-		System.out.println("---------------------" + "this is obj");
-		System.out.println(obj1.getVal());
 		
-		return resp;*/
+		//System.out.println("------------------------------------");
+		//System.out.println(cin.getContent());
+		//System.out.println("------------------------------------");
+		
+		Obj obj = ObixDecoder.fromString(cin.getContent());
+		//System.out.println(obj.getObjGroup());
+		Int ret = (Int) obj.getObjGroup().get(2);
+		//System.out.println(ret.getVal());
+		//System.out.println(ret.getVal().intValue());
+
+		return ret.getVal().intValue();
 	}
 	
 	/**
