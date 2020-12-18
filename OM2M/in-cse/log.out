@@ -27920,3 +27920,2253 @@ Response in Router= ResponsePrimitive [
 ]
 [2020-12-08 17:16:03,783 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
 send UTF8
+[2020-12-18 14:56:42,265 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-12-18 14:56:42,266 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-12-18 14:56:43,214 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-12-18 14:56:43,214 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-12-18 14:56:43,532 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-12-18 14:56:43,545 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Register CoAP RestClientService..
+[2020-12-18 14:56:43,546 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Starting CoAP server
+[2020-12-18 14:56:43,578 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CseService opened
+[2020-12-18 14:56:43,580 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-12-18 14:56:43,584 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-12-18 14:56:43,728 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-12-18 14:56:43,729 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-12-18 14:56:43,729 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-12-18 14:56:43,729 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-12-18 14:56:43,730 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-12-18 14:56:43,730 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-12-18 14:56:43,732 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: coap
+[2020-12-18 14:56:43,732 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-12-18 14:56:43,734 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-12-18 14:56:43,735 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-12-18 14:56:43,785 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2020-12-18 14:56:43,785 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2020-12-18 14:56:45,313 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-12-18 14:56:45,326 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-12-18 14:56:45,327 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-12-18 14:56:45,328 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-12-18 14:56:45,330 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-12-18 14:56:45,351 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-12-18 14:56:45,352 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-12-18 14:56:45,362 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CSE Service discovered
+[2020-12-18 14:56:45,362 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-12-18 14:56:45,363 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2020-12-18 15:02:03,900 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:02:03,902 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@833dd27,
+ ]
+[2020-12-18 15:02:03,902 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:02:03,903 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:02:03,903 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:02:03,903 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@833dd27,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:02:03,905 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:02:03,909 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:02:03,952 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:02:03,968 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_663225060">
+   <ty>4</ty>
+   <ri>/in-cse/cin-663225060</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201204T101126</ct>
+   <lt>20201204T101126</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:02:03,969 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:05:21,595 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:05:21,596 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@267056f3,
+ ]
+[2020-12-18 15:05:21,599 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:05:21,600 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:05:21,602 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:05:21,603 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@267056f3,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:05:21,606 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:05:21,609 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:05:21,621 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:05:21,624 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_663225060">
+   <ty>4</ty>
+   <ri>/in-cse/cin-663225060</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201204T101126</ct>
+   <lt>20201204T101126</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:05:21,625 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:06:40,105 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:06:40,105 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3f06b2ec,
+ ]
+[2020-12-18 15:06:40,106 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:06:40,108 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:06:40,109 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:06:40,110 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3f06b2ec,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:06:40,112 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:06:40,113 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:06:40,119 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:06:40,121 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_663225060">
+   <ty>4</ty>
+   <ri>/in-cse/cin-663225060</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201204T101126</ct>
+   <lt>20201204T101126</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:06:40,121 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:08:13,386 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:08:13,386 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@831ce4a,
+ ]
+[2020-12-18 15:08:13,387 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:08:13,388 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:08:13,388 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:08:13,389 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@831ce4a,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:08:13,390 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:08:13,392 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:08:13,399 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:08:13,400 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_663225060">
+   <ty>4</ty>
+   <ri>/in-cse/cin-663225060</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201204T101126</ct>
+   <lt>20201204T101126</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:08:13,400 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:16,541 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:16,543 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@63b9b220,
+ ]
+[2020-12-18 15:18:16,543 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:16,544 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@63b9b220,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:16,544 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2020-12-18 15:18:16,545 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-12-18 15:18:16,559 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:16,563 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cb" : {
+      "rn" : "in-name",
+      "ty" : 5,
+      "ri" : "/in-cse",
+      "ct" : "20201118T164414",
+      "lt" : "20201118T164414",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "cst" : 1,
+      "csi" : "in-cse",
+      "srt" : [ 1, 2, 3, 4, 5, 9, 14, 15, 16, 17, 23, 28 ],
+      "poa" : [ "http://127.0.0.1:8080/" ],
+      "ch" : [ {
+         "nm" : "acp_admin",
+         "typ" : 1,
+         "val" : "/in-cse/acp-301965269"
+      }, {
+         "nm" : "insaRoomsAE",
+         "typ" : 2,
+         "val" : "/in-cse/CAE232270201"
+      }, {
+         "nm" : "mn-name",
+         "typ" : 16,
+         "val" : "/in-cse/csr-985036059"
+      } ]
+   }
+}
+]
+[2020-12-18 15:18:16,563 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:18,809 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:18,809 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/CAE232270201,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@f186955,
+ ]
+[2020-12-18 15:18:18,811 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:18,811 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/CAE232270201,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@f186955,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:18,812 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/CAE232270201
+[2020-12-18 15:18:18,813 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-12-18 15:18:18,832 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:18,834 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:ae" : {
+      "rn" : "insaRoomsAE",
+      "ty" : 2,
+      "ri" : "/in-cse/CAE232270201",
+      "pi" : "/in-cse",
+      "ct" : "20201118T172900",
+      "lt" : "20201118T172900",
+      "lbl" : [ "/home" ],
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T172900",
+      "api" : "\n        insaRooms\n    ",
+      "aei" : "CAE232270201",
+      "ch" : [ {
+         "nm" : "room2CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-314582242"
+      }, {
+         "nm" : "room1CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-805178581"
+      }, {
+         "nm" : "room3CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-828532438"
+      } ],
+      "rr" : false
+   }
+}
+]
+[2020-12-18 15:18:18,835 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:20,058 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:20,059 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-805178581,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@27bd544a,
+ ]
+[2020-12-18 15:18:20,060 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:20,060 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-805178581,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@27bd544a,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:20,061 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-805178581
+[2020-12-18 15:18:20,062 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:18:20,072 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:20,074 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "room1CT",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-805178581",
+      "pi" : "/in-cse/CAE232270201",
+      "ct" : "20201118T173140",
+      "lt" : "20201118T173140",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T173140",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "room1SensorsCT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-72976921"
+      }, {
+         "nm" : "room1ActuatorsCT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-360304096"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/la"
+   }
+}
+]
+[2020-12-18 15:18:20,075 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:20,740 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:20,740 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-72976921,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@75441908,
+ ]
+[2020-12-18 15:18:20,742 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:20,742 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-72976921,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@75441908,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:20,743 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-72976921
+[2020-12-18 15:18:20,743 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:18:20,757 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:20,759 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "room1SensorsCT",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-72976921",
+      "pi" : "/in-cse/cnt-805178581",
+      "ct" : "20201118T174430",
+      "lt" : "20201118T174430",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T174430",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "light",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-179433893"
+      }, {
+         "nm" : "movement",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-537858083"
+      }, {
+         "nm" : "temperature",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-170093671"
+      }, {
+         "nm" : "light1",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-939586265"
+      }, {
+         "nm" : "light2",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-421496620"
+      }, {
+         "nm" : "window1",
+         "typ" : 3,
+         "val" (...)
+]
+[2020-12-18 15:18:20,759 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:21,764 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:21,765 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-179433893,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@35e7701f,
+ ]
+[2020-12-18 15:18:21,765 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:21,766 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-179433893,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@35e7701f,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:21,766 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-179433893
+[2020-12-18 15:18:21,766 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:18:21,773 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:21,775 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "light",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-179433893",
+      "pi" : "/in-cse/cnt-72976921",
+      "ct" : "20201119T113151",
+      "lt" : "20201119T113151",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211119T113151",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "DESCRIPTOR",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-872994655"
+      }, {
+         "nm" : "DATA",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-133267206"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/la"
+   }
+}
+]
+[2020-12-18 15:18:21,775 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:22,736 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:22,737 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-872994655,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@57027384,
+ ]
+[2020-12-18 15:18:22,738 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:22,738 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-872994655,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@57027384,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:22,738 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-872994655
+[2020-12-18 15:18:22,739 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:18:22,746 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:22,748 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "DESCRIPTOR",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-872994655",
+      "pi" : "/in-cse/cnt-179433893",
+      "ct" : "20201204T095733",
+      "lt" : "20201204T095733",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211204T095733",
+      "st" : 1,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 1,
+      "cbs" : 333,
+      "ch" : [ {
+         "nm" : "cin_403753492",
+         "typ" : 4,
+         "val" : "/in-cse/cin-403753492"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DESCRIPTOR/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DESCRIPTOR/la"
+   }
+}
+]
+[2020-12-18 15:18:22,748 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:25,117 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:25,118 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cin-403753492,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@22e07bb7,
+ ]
+[2020-12-18 15:18:25,118 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:25,119 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cin-403753492,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@22e07bb7,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:25,119 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cin-403753492
+[2020-12-18 15:18:25,120 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:18:25,126 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:25,127 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_403753492",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-403753492",
+      "pi" : "/in-cse/cnt-872994655",
+      "ct" : "20201204T100346",
+      "lt" : "20201204T100346",
+      "st" : 0,
+      "cnf" : "application/xml",
+      "cs" : 333,
+      "con" : "\n        <obj>\n            <str name=\"type\" val=\"Light_Sensor\"/>\n            <str name=\"location\" val=\"Room1\"/>\n            <str name=\"appId\" val=\"light\"/>\n            <op name=\"getValue\" href=\"/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA\"\n            in=\"obix:Nil\" out=\"obix:Nil\" is=\"retrieve\"/>\n        </obj>\n    "
+   }
+}
+]
+[2020-12-18 15:18:25,127 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:27,675 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:27,675 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-133267206,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@8568215,
+ ]
+[2020-12-18 15:18:27,676 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:27,676 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-133267206,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@8568215,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:27,677 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-133267206
+[2020-12-18 15:18:27,677 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:18:27,683 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:27,684 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "DATA",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-133267206",
+      "pi" : "/in-cse/cnt-179433893",
+      "ct" : "20201204T100953",
+      "lt" : "20201204T100953",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211204T100953",
+      "st" : 1,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 1,
+      "cbs" : 192,
+      "ch" : [ {
+         "nm" : "cin_663225060",
+         "typ" : 4,
+         "val" : "/in-cse/cin-663225060"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la"
+   }
+}
+]
+[2020-12-18 15:18:27,685 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:18:28,244 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:18:28,244 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cin-663225060,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6530ad0a,
+ ]
+[2020-12-18 15:18:28,245 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:18:28,245 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cin-663225060,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6530ad0a,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:18:28,246 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cin-663225060
+[2020-12-18 15:18:28,246 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:18:28,249 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:18:28,250 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_663225060",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-663225060",
+      "pi" : "/in-cse/cnt-133267206",
+      "ct" : "20201204T101126",
+      "lt" : "20201204T101126",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 192,
+      "con" : "\n      <obj>\n        <str name=\"appId\" val=\"light\"/>\n        <str name=\"category\" val=\"luminosity\"/>\n        <int name=\"data\" val=\"342\"/>\n        <int name=\"unit\" val=\"lux\"/>\n      </obj>\n    "
+   }
+}
+]
+[2020-12-18 15:18:28,251 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:19:54,646 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:19:54,648 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;int&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@56249e6d,
+ ]
+[2020-12-18 15:19:54,650 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml;ty=4
+[2020-12-18 15:19:54,651 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:19:54,652 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2020-12-18 15:19:54,653 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2020-12-18 15:19:54,654 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;int&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@56249e6d,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:19:54,655 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA
+[2020-12-18 15:19:54,656 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:19:54,707 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:19:54,713 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-909980585,
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_909980585">
+   <ty>4</ty>
+   <ri>/in-cse/cin-909980585</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T151954</ct>
+   <lt>20201218T151954</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;int&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:19:54,715 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:01,286 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:01,286 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7644ac64,
+ ]
+[2020-12-18 15:20:01,287 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:01,287 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7644ac64,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:01,288 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2020-12-18 15:20:01,288 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-12-18 15:20:01,290 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:01,291 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cb" : {
+      "rn" : "in-name",
+      "ty" : 5,
+      "ri" : "/in-cse",
+      "ct" : "20201118T164414",
+      "lt" : "20201118T164414",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "cst" : 1,
+      "csi" : "in-cse",
+      "srt" : [ 1, 2, 3, 4, 5, 9, 14, 15, 16, 17, 23, 28 ],
+      "poa" : [ "http://127.0.0.1:8080/" ],
+      "ch" : [ {
+         "nm" : "acp_admin",
+         "typ" : 1,
+         "val" : "/in-cse/acp-301965269"
+      }, {
+         "nm" : "insaRoomsAE",
+         "typ" : 2,
+         "val" : "/in-cse/CAE232270201"
+      }, {
+         "nm" : "mn-name",
+         "typ" : 16,
+         "val" : "/in-cse/csr-985036059"
+      } ]
+   }
+}
+]
+[2020-12-18 15:20:01,291 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:03,610 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:03,610 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/CAE232270201,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@761a5036,
+ ]
+[2020-12-18 15:20:03,611 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:03,611 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/CAE232270201,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@761a5036,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:03,612 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/CAE232270201
+[2020-12-18 15:20:03,612 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-12-18 15:20:03,618 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:03,619 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:ae" : {
+      "rn" : "insaRoomsAE",
+      "ty" : 2,
+      "ri" : "/in-cse/CAE232270201",
+      "pi" : "/in-cse",
+      "ct" : "20201118T172900",
+      "lt" : "20201118T172900",
+      "lbl" : [ "/home" ],
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T172900",
+      "api" : "\n        insaRooms\n    ",
+      "aei" : "CAE232270201",
+      "ch" : [ {
+         "nm" : "room2CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-314582242"
+      }, {
+         "nm" : "room1CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-805178581"
+      }, {
+         "nm" : "room3CT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-828532438"
+      } ],
+      "rr" : false
+   }
+}
+]
+[2020-12-18 15:20:03,619 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:04,615 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:04,615 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-805178581,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5f890fb,
+ ]
+[2020-12-18 15:20:04,616 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:04,616 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-805178581,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5f890fb,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:04,617 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-805178581
+[2020-12-18 15:20:04,617 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:20:04,622 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:04,623 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "room1CT",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-805178581",
+      "pi" : "/in-cse/CAE232270201",
+      "ct" : "20201118T173140",
+      "lt" : "20201118T173140",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T173140",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "room1SensorsCT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-72976921"
+      }, {
+         "nm" : "room1ActuatorsCT",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-360304096"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/la"
+   }
+}
+]
+[2020-12-18 15:20:04,624 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:05,211 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:05,212 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-72976921,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@234c83fa,
+ ]
+[2020-12-18 15:20:05,213 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:05,213 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-72976921,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@234c83fa,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:05,213 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-72976921
+[2020-12-18 15:20:05,214 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:20:05,225 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:05,226 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "room1SensorsCT",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-72976921",
+      "pi" : "/in-cse/cnt-805178581",
+      "ct" : "20201118T174430",
+      "lt" : "20201118T174430",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211118T174430",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "light",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-179433893"
+      }, {
+         "nm" : "movement",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-537858083"
+      }, {
+         "nm" : "temperature",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-170093671"
+      }, {
+         "nm" : "light1",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-939586265"
+      }, {
+         "nm" : "light2",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-421496620"
+      }, {
+         "nm" : "window1",
+         "typ" : 3,
+         "val" (...)
+]
+[2020-12-18 15:20:05,227 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:07,659 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:07,659 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-179433893,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3b207f7c,
+ ]
+[2020-12-18 15:20:07,660 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:07,661 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-179433893,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3b207f7c,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:07,661 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-179433893
+[2020-12-18 15:20:07,661 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:20:07,666 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:07,667 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "light",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-179433893",
+      "pi" : "/in-cse/cnt-72976921",
+      "ct" : "20201119T113151",
+      "lt" : "20201119T113151",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211119T113151",
+      "st" : 0,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 0,
+      "cbs" : 0,
+      "ch" : [ {
+         "nm" : "DESCRIPTOR",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-872994655"
+      }, {
+         "nm" : "DATA",
+         "typ" : 3,
+         "val" : "/in-cse/cnt-133267206"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/la"
+   }
+}
+]
+[2020-12-18 15:20:07,667 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:08,398 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:08,399 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cnt-133267206,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@4913c6,
+ ]
+[2020-12-18 15:20:08,400 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:08,401 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cnt-133267206,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@4913c6,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:08,401 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cnt-133267206
+[2020-12-18 15:20:08,401 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-12-18 15:20:08,407 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:08,408 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cnt" : {
+      "rn" : "DATA",
+      "ty" : 3,
+      "ri" : "/in-cse/cnt-133267206",
+      "pi" : "/in-cse/cnt-179433893",
+      "ct" : "20201204T100953",
+      "lt" : "20201204T100953",
+      "acpi" : [ "/in-cse/acp-301965269" ],
+      "et" : "20211204T100953",
+      "st" : 2,
+      "mni" : 10,
+      "mbs" : 10000,
+      "mia" : 0,
+      "cni" : 2,
+      "cbs" : 384,
+      "ch" : [ {
+         "nm" : "cin_663225060",
+         "typ" : 4,
+         "val" : "/in-cse/cin-663225060"
+      }, {
+         "nm" : "cin_909980585",
+         "typ" : 4,
+         "val" : "/in-cse/cin-909980585"
+      } ],
+      "ol" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/ol",
+      "la" : "/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la"
+   }
+}
+]
+[2020-12-18 15:20:08,408 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:09,266 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:09,266 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cin-663225060,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@310dcf70,
+ ]
+[2020-12-18 15:20:09,267 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:09,267 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cin-663225060,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@310dcf70,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:09,268 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cin-663225060
+[2020-12-18 15:20:09,268 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:20:09,270 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:09,271 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_663225060",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-663225060",
+      "pi" : "/in-cse/cnt-133267206",
+      "ct" : "20201204T101126",
+      "lt" : "20201204T101126",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 192,
+      "con" : "\n      <obj>\n        <str name=\"appId\" val=\"light\"/>\n        <str name=\"category\" val=\"luminosity\"/>\n        <int name=\"data\" val=\"342\"/>\n        <int name=\"unit\" val=\"lux\"/>\n      </obj>\n    "
+   }
+}
+]
+[2020-12-18 15:20:09,271 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:12,796 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:12,797 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/cin-909980585,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@24a691bf,
+ ]
+[2020-12-18 15:20:12,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2020-12-18 15:20:12,798 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/cin-909980585,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@24a691bf,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2020-12-18 15:20:12,798 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/cin-909980585
+[2020-12-18 15:20:12,798 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:20:12,800 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:12,802 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cin" : {
+      "rn" : "cin_909980585",
+      "ty" : 4,
+      "ri" : "/in-cse/cin-909980585",
+      "pi" : "/in-cse/cnt-133267206",
+      "ct" : "20201218T151954",
+      "lt" : "20201218T151954",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 192,
+      "con" : "\n      <obj>\n        <str name=\"appId\" val=\"light\"/>\n        <str name=\"category\" val=\"luminosity\"/>\n        <int name=\"data\" val=\"342\"/>\n        <int name=\"unit\" val=\"int\"/>\n      </obj>\n    "
+   }
+}
+]
+[2020-12-18 15:20:12,803 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:20:32,566 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:20:32,567 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3c20fc96,
+ ]
+[2020-12-18 15:20:32,567 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:20:32,567 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:20:32,568 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:20:32,568 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3c20fc96,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:20:32,568 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:20:32,570 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:20:32,573 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:20:32,574 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_909980585">
+   <ty>4</ty>
+   <ri>/in-cse/cin-909980585</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T151954</ct>
+   <lt>20201218T151954</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;int&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:20:32,574 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:21:40,067 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:21:40,069 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;str&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@10353df6,
+ ]
+[2020-12-18 15:21:40,073 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml;ty=4
+[2020-12-18 15:21:40,074 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:21:40,077 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2020-12-18 15:21:40,078 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2020-12-18 15:21:40,078 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;str&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@10353df6,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:21:40,079 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA
+[2020-12-18 15:21:40,082 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:21:40,093 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:21:40,094 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-579192863,
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_579192863">
+   <ty>4</ty>
+   <ri>/in-cse/cin-579192863</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152140</ct>
+   <lt>20201218T152140</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;str&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:21:40,095 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:22:13,196 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:22:13,197 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;5&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7002abf1,
+ ]
+[2020-12-18 15:22:13,198 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml;ty=4
+[2020-12-18 15:22:13,199 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:22:13,199 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2020-12-18 15:22:13,200 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2020-12-18 15:22:13,202 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;int name=&quot;unit&quot; val=&quot;5&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7002abf1,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:22:13,202 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA
+[2020-12-18 15:22:13,204 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:22:13,217 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:22:13,217 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-581585081,
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_581585081">
+   <ty>4</ty>
+   <ri>/in-cse/cin-581585081</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152213</ct>
+   <lt>20201218T152213</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>190</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;5&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:22:13,218 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:22:23,502 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:22:23,503 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3048ab01,
+ ]
+[2020-12-18 15:22:23,504 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:22:23,504 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:22:23,505 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:22:23,505 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@3048ab01,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:22:23,506 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:22:23,506 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:22:23,512 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:22:23,515 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_581585081">
+   <ty>4</ty>
+   <ri>/in-cse/cin-581585081</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152213</ct>
+   <lt>20201218T152213</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>190</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;5&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:22:23,515 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:23:05,737 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:23:05,738 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7ba609cb,
+ ]
+[2020-12-18 15:23:05,739 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:23:05,740 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:23:05,740 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:23:05,740 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7ba609cb,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:23:05,741 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:23:05,741 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:23:05,744 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:23:05,744 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_581585081">
+   <ty>4</ty>
+   <ri>/in-cse/cin-581585081</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152213</ct>
+   <lt>20201218T152213</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>190</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;int name=&quot;unit&quot; val=&quot;5&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:23:05,745 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:23:52,508 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:23:52,509 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7ef1b8c6,
+ ]
+[2020-12-18 15:23:52,510 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml;ty=4
+[2020-12-18 15:23:52,512 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:23:52,512 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2020-12-18 15:23:52,512 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2020-12-18 15:23:52,513 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content=<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+    <cnf>message</cnf>
+    <con>
+      &lt;obj&gt;
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/&gt;
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/&gt;
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/&gt;
+      &lt;/obj&gt;
+    </con>
+</m2m:cin>
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@7ef1b8c6,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:23:52,513 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA
+[2020-12-18 15:23:52,513 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContentInstanceController]
+[2020-12-18 15:23:52,519 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:23:52,521 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2001
+ to=admin:admin
+ from=/in-cse
+ location=/in-cse/cin-486094724,
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:23:52,521 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:24:03,321 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:24:03,321 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5d53c71c,
+ ]
+[2020-12-18 15:24:03,322 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:24:03,323 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:24:03,323 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:24:03,324 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5d53c71c,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:24:03,324 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:24:03,325 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:24:03,329 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:24:03,331 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:24:03,331 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:27:10,701 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:27:10,702 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@4f0748b9,
+ ]
+[2020-12-18 15:27:10,703 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:27:10,703 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:27:10,703 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:27:10,703 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@4f0748b9,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:27:10,704 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:27:10,704 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:27:10,706 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:27:10,707 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:27:10,708 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:27:45,938 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:27:45,938 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6aa7f720,
+ ]
+[2020-12-18 15:27:45,939 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:27:45,939 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:27:45,940 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:27:45,940 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@6aa7f720,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:27:45,940 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:27:45,941 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:27:45,943 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:27:45,944 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:27:45,944 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:30:39,396 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:30:39,397 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@1bfc1199,
+ ]
+[2020-12-18 15:30:39,398 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:30:39,398 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:30:39,399 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:30:39,399 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@1bfc1199,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:30:39,399 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:30:39,400 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:30:39,402 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:30:39,403 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:30:39,404 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:30:58,325 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:30:58,326 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@40238ba5,
+ ]
+[2020-12-18 15:30:58,327 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:30:58,327 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:30:58,327 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:30:58,327 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@40238ba5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:30:58,328 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:30:58,328 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:30:58,330 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:30:58,331 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:30:58,331 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:36:27,171 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:36:27,172 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@32a8e191,
+ ]
+[2020-12-18 15:36:27,174 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-18 15:36:27,175 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-18 15:36:27,176 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-18 15:36:27,177 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la,
+ from=admin:admin,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@32a8e191,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:36:27,178 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/insaRoomsAE/room1CT/room1SensorsCT/light/DATA/la
+[2020-12-18 15:36:27,179 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [LatestOldestController]
+[2020-12-18 15:36:27,183 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:36:27,185 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/xml,
+ content (Only first 1000 caracters)=
+ <?xml version="1.0" encoding="UTF-8"?>
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="cin_486094724">
+   <ty>4</ty>
+   <ri>/in-cse/cin-486094724</ri>
+   <pi>/in-cse/cnt-133267206</pi>
+   <ct>20201218T152352</ct>
+   <lt>20201218T152352</lt>
+   <st>0</st>
+   <cnf>message</cnf>
+   <cs>192</cs>
+   <con>
+      &lt;obj>
+        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/>
+        &lt;str name=&quot;category&quot; val=&quot;luminosity&quot;/>
+        &lt;int name=&quot;data&quot; val=&quot;342&quot;/>
+        &lt;str name=&quot;unit&quot; val=&quot;lux&quot;/>
+      &lt;/obj>
+    </con>
+</m2m:cin>
+
+]
+[2020-12-18 15:36:27,185 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2020-12-18 15:40:56,222 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-18 15:40:56,222 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@2569a8f3,
+ ]
+[2020-12-18 15:40:56,223 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: */*
+[2020-12-18 15:40:56,223 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@2569a8f3,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-18 15:40:56,224 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2020-12-18 15:40:56,224 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-12-18 15:40:56,225 ERROR] - org.eclipse.om2m.core.controller.Controller 
+om2mException
+org.eclipse.om2m.commons.exceptions.AccessDeniedException: Unknown or unauthorized originator
+	at org.eclipse.om2m.core.controller.Controller.checkACP(Controller.java:209)
+	at org.eclipse.om2m.core.controller.CSEBaseController.doRetrieve(CSEBaseController.java:58)
+	at org.eclipse.om2m.core.controller.Controller.doRequest(Controller.java:79)
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:237)
+	at org.eclipse.om2m.binding.http.RestHttpServlet.service(RestHttpServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+[2020-12-18 15:40:56,226 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2020-12-18 15:40:56,227 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Unknown or unauthorized originator
+org.eclipse.om2m.commons.exceptions.AccessDeniedException: Unknown or unauthorized originator
+	at org.eclipse.om2m.core.controller.Controller.checkACP(Controller.java:209)
+	at org.eclipse.om2m.core.controller.CSEBaseController.doRetrieve(CSEBaseController.java:58)
+	at org.eclipse.om2m.core.controller.Controller.doRequest(Controller.java:79)
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:237)
+	at org.eclipse.om2m.binding.http.RestHttpServlet.service(RestHttpServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+[2020-12-18 15:40:56,228 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4103
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Unknown or unauthorized originator
+]
+[2020-12-18 15:40:56,228 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
