@@ -4,5 +4,7 @@
 *.cfg
 *.info
 *.1
+*.2
+*.log
 *.out
 *.db
