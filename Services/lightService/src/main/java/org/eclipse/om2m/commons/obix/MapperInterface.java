@@ -1,4 +1,4 @@
-package iss.soa.lightService.model;
+package org.eclipse.om2m.commons.obix;
 /**
  * Interface for the mapping operations
  *

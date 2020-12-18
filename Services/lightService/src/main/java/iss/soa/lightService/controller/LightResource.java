@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.client.RestTemplate;
 
-import iss.soa.lightService.model.Mapper; 
-
 import org.eclipse.om2m.commons.resource.ContentInstance;
 import org.eclipse.om2m.commons.obix.*;
 import org.eclipse.om2m.commons.obix.io.*;

@@ -1,4 +1,4 @@
-package iss.soa.lightService.model;
+package org.eclipse.om2m.commons.obix;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
