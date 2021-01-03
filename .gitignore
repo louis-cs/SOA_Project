@@ -1,10 +1,10 @@
 *.zip
 *.exe
 /bin/
-*.cfg
-*.info
-*.1
-*.2
 *.log
 *.out
-*.db
+*.info.1
+*Table.1
+*Table.2
+*TableLock
+*.trace.db
