@@ -7,29 +7,21 @@ import org.eclipse.om2m.commons.resource.URIList;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import iss.soa.hmi.model.Hmi;
 
+@RestController
 public class HmiResource {
-	
-	/**
-	 * Return the Hmi
-	 * @return Hmi
-	 */
-	@GetMapping
-	public Hmi disp() {
-		Hmi ihm = new Hmi();
-		return ihm;
-	}
 	
 	/**
 	 * Retrieving URI from OM2M
 	 * @return urls
 	 */
-	@GetMapping(value = "/r/{var}")
+	@GetMapping(value = "/r/{var}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public String retrieve(@PathVariable String var) {
 		RestTemplate rt = new RestTemplate();		
 		HttpHeaders headers = new HttpHeaders();
@@ -46,7 +38,7 @@ public class HmiResource {
 		URIList uri = (URIList)mapper.unmarshal(resp);
 		
 		List<String> list = uri.getListOfUri();
-		resp = "Request: " + var + "\n	-> Found:\n";
+		resp = "Request: \"" + var + "\"\nFound ->\n";
 		
 		for(String s : list){
 			resp += s + "\n";
