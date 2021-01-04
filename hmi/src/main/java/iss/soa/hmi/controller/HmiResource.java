@@ -29,7 +29,7 @@ public class HmiResource {
 		headers.set("Accept", "application/xml");
 		HttpEntity<String> entity = new HttpEntity<String>(headers);
 		
-		String url = "http://127.0.0.1:8080/~/in-cse?fu=1&" + var;
+		String url = "http://127.0.0.1:8080/~/in-cse?fu=1&" + var; //var = "ty=x" //var = "rn=DATA"
 		
 		ResponseEntity<String> response = rt.exchange(url, HttpMethod.GET, entity, String.class);
 		String resp = (String)response.getBody();
