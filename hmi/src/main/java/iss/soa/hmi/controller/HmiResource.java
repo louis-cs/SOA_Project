@@ -17,6 +17,16 @@ import iss.soa.hmi.model.Hmi;
 @RestController
 public class HmiResource {
 	
+	private Hmi hmi = new Hmi();
+	
+	/**
+	 * Change loop state
+	 */
+	@GetMapping("/loop")
+	public void loop(){
+		hmi.loop();
+	}
+	
 	/**
 	 * Retrieving URI from OM2M
 	 * @return urls
@@ -43,6 +53,27 @@ public class HmiResource {
 		for(String s : list){
 			resp += s + "\n";
 		}
+		return resp;
+	}
+	
+	///////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////
+	
+	/**
+	 * SOA Project Main:
+	 * Automatic control system
+	 */
+	@GetMapping
+	public String main() {
+		RestTemplate rt = new RestTemplate();
+		
+		String uri;
+		uri = hmi.light + hmi.get("1", "");
+		System.out.println(uri);
+		
+		ResponseEntity<String> response = rt.getForEntity(uri, String.class);
+		String resp = (String)response.getBody();
+		
 		return resp;
 	}
 }

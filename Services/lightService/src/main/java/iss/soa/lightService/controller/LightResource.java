@@ -20,8 +20,8 @@ public class LightResource {
 	/**
 	 * Get sensor value from OM2M
 	 */
-	@GetMapping(value = "/light/{room}/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public int getLightValue(@PathVariable int room, @PathVariable int id) {
+	@GetMapping(value = "/light", produces = MediaType.APPLICATION_JSON_VALUE)
+	public int getLightValue(@RequestParam String room, @RequestParam String id) {
 		RestTemplate rt = new RestTemplate();		
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("x-m2m-origin", "admin:admin");
@@ -47,8 +47,8 @@ public class LightResource {
 	/**
 	 * Set sensor value from OM2M
 	 */
-	@GetMapping(value = "/light/set/{room}/{id}/{val}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String setValue(@PathVariable int room, @PathVariable int id, @PathVariable int val) {
+	@GetMapping(value = "/light/set", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String setLightValue(@RequestParam String room, @RequestParam String id, @RequestParam String val) {
 		RestTemplate rt = new RestTemplate();		
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("x-m2m-origin", "admin:admin");
@@ -83,8 +83,8 @@ public class LightResource {
 	/**
 	 * Get led state from OM2M
 	 */
-	@GetMapping(value = "/led/{room}/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Boolean getLedState(@PathVariable int room, @PathVariable int id){
+	@GetMapping(value = "/led", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Boolean getLedState(@RequestParam String room, @RequestParam String id){
 		RestTemplate rt = new RestTemplate();		
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("x-m2m-origin", "admin:admin");
@@ -108,10 +108,10 @@ public class LightResource {
 	}
 	
 	/**
-	 * Get led state from OM2M
+	 * Set led state from OM2M
 	 */
-	@GetMapping(value = "/led/set/{room}/{id}/{bool}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String setLedState(@PathVariable int room, @PathVariable int id, @PathVariable boolean bool){
+	@GetMapping(value = "/led/set", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String setLedState(@RequestParam String room, @RequestParam String id, @RequestParam String val){
 		RestTemplate rt = new RestTemplate();		
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("x-m2m-origin", "admin:admin");
@@ -123,7 +123,7 @@ public class LightResource {
 				+ "      &lt;obj&gt;"
 				+ "        &lt;str name=&quot;appId&quot; val=&quot;light&quot;/&gt;"
 				+ "        &lt;str name=&quot;category&quot; val=&quot;luminosity &quot;/&gt;"
-				+ "        &lt;boolean name=&quot;data&quot; val=&quot;" + bool + "&quot;/&gt;"
+				+ "        &lt;boolean name=&quot;data&quot; val=&quot;" + val + "&quot;/&gt;"
 				+ "        &lt;str name=&quot;unit&quot; val=&quot;boolean&quot;/&gt;"
 				+ "      &lt;/obj&gt;"
 				+ "    </con>"
