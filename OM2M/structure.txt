@@ -2,45 +2,23 @@ insaRoomsAE
 	room1CT
 		room1SensorsCT
 			light
-				DESCRIPTOR
-				DATA
 			movement
 			temperature
-			light1
-			light2
-			window1
-			window2
-			door1
-			door2
-			radiator1
-			radiator2
 		room1ActuatorsCT
 			alarm
-			light1
-			light2
-			window1
-			window2
-			door1
-			door2
-			radiator1
-			radiator2
+			led
+			window
+			door
+			radiator
 	room2CT
 		room2SensorsCT
 			light
 			movement
 			temperature
-			light1
-			light2
-			window1
-			window2
-			door1
-			door2
-			radiator1
-			radiator2
 		room2ActuatorsCT
 			alarm
-			light1
-			light2
+			led1
+			led2
 			window1
 			window2
 			door1
@@ -52,21 +30,17 @@ insaRoomsAE
 			light
 			movement
 			temperature
-			light1
-			light2
-			window1
-			window2
-			door1
-			door2
-			radiator1
-			radiator2
 		room3ActuatorsCT
 			alarm
-			light1
-			light2
+			led1
+			led2
+			led3
 			window1
 			window2
+			window3
 			door1
 			door2
+			door3
 			radiator1
 			radiator2
+			radiator3
