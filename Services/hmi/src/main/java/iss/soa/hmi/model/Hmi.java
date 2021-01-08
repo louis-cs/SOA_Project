@@ -2,15 +2,18 @@ package iss.soa.hmi.model;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
+import java.time.LocalTime;
 
 public class Hmi {
 
 	private static boolean loop;
 	private static String ui;
+	public static LocalTime time;
 	
 	public Hmi() {
 		loop = false;
-		ui = "Basic User Interface..."; 
+		ui = "Basic User Interface...";
+		time = LocalTime.now();
 	}
 	
 	public boolean getLoop() {
@@ -33,11 +36,18 @@ public class Hmi {
 	////////////////////////////////////////
 	
 	/*
+	 * UI additional log information
+	 */
+	public ResponseEntity<String> uiResp;
+	public String log;
+	
+	/*
 	 * OM2M values
 	 */	
 	public int lum;
 	public boolean presence;
-	public int temp;
+	public int inside;
+	public int outside;
 	public boolean led;
 	public boolean door;
 	public boolean alarm;
@@ -52,7 +62,8 @@ public class Hmi {
 	 */	
 	public String lights = "http://localhost:8082/light";
 	public String movements = "http://localhost:8083/movement";
-	public String temperatures = "http://localhost:8081/temperature";
+	public String temperatureInside = "http://localhost:8081/temperature/inside";
+	public String temperatureOutside = "http://localhost:8081/temperature/outside";
 	public String leds = "http://localhost:8082/led";
 	public String doors = "http://localhost:8083/door";
 	public String alarms = "http://localhost:8083/alarm";
@@ -78,7 +89,7 @@ public class Hmi {
 	 */
 	public String getAllOM2M(RestTemplate rt, String room, String id) {
 		String uri, gui;
-		gui = "	OM2M - Room: " + room + "Device: " + id
+		gui = "	OM2M - Room: " + room + "Device: " + id + "Time:" + time
 				+ "\n * * * * * * * * * * * *"
 				+ "\nSensors ->";
 		uri = this.lights + this.get(room, "");		
@@ -89,10 +100,14 @@ public class Hmi {
 		ResponseEntity<Boolean> boolResponse = rt.getForEntity(uri, boolean.class);
 		this.presence = (boolean)boolResponse.getBody();
 		gui += " | Presence: " + this.presence;
-		uri = this.temperatures + this.get(room, "");
+		uri = this.temperatureInside + this.get(room, "");
 		intResponse = rt.getForEntity(uri, int.class);
-		this.temp = (int)intResponse.getBody();	
-		gui += " | Temperature: " + this.temp;
+		this.inside = (int)intResponse.getBody();	
+		gui += " | Temperature Inside: " + this.inside;
+		uri = this.temperatureOutside + this.get(room, "");
+		intResponse = rt.getForEntity(uri, int.class);
+		this.outside = (int)intResponse.getBody();	
+		gui += " | Temperature Outside: " + this.outside;
 		uri = this.leds + this.get(room, id);
 		boolResponse = rt.getForEntity(uri, boolean.class);
 		this.led = (boolean)boolResponse.getBody();
@@ -104,15 +119,15 @@ public class Hmi {
 		uri = this.doors + this.get(room, id);
 		boolResponse = rt.getForEntity(uri, boolean.class);
 		this.door = (boolean)boolResponse.getBody();
-		gui += " | Alarm: " + this.door;		
+		gui += " | Door: " + this.door;		
 		uri = this.windows + this.get(room, id);
 		boolResponse = rt.getForEntity(uri, boolean.class);
 		this.window = (boolean)boolResponse.getBody();
-		gui += " | Alarm: " + this.window;
+		gui += " | Window: " + this.window;
 		uri = this.radiators + this.get(room, id);
 		boolResponse = rt.getForEntity(uri, boolean.class);
 		this.radiator = (boolean)boolResponse.getBody();
-		gui += " | Alarm: " + this.radiator
+		gui += " | Radiator: " + this.radiator
 				+ "\n * * * * * * * * * * * *";
 		return gui;
 	}
