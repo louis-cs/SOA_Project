@@ -180,7 +180,7 @@ public class TemperatureResource {
 				+ "    <con>"
 				+ "      &lt;obj&gt;"
 				+ "        &lt;str name=&quot;appId&quot; val=&quot;temperature&quot;/&gt;"
-				+ "        &lt;str name=&quot;category&quot; val=&quot;temperature&quot;/&gt;"
+				+ "        &lt;str name=&quot;category&quot; val=&quot;outside temperature&quot;/&gt;"
 				+ "        &lt;int name=&quot;data&quot; val=&quot;" + val + "&quot;/&gt;"
 				+ "        &lt;str name=&quot;unit&quot; val=&quot;°C&quot;/&gt;"
 				+ "      &lt;/obj&gt;"
@@ -209,7 +209,7 @@ public class TemperatureResource {
 		headers.set("x-m2m-origin", "admin:admin");
 		headers.set("Content-type", "application/xml;ty=3");
 		
-		String body = "<m2m:cnt xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"temperature"+id+"\"></m2m:cnt>";		
+		String body = "<m2m:cnt xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"temperatureOutside"+id+"\"></m2m:cnt>";		
 		
 		HttpEntity<String> entity = new HttpEntity<String>(body, headers);		
 		String url = "http://127.0.0.1:8080/~/in-cse/in-name/insaRoomsAE/room"
