@@ -415,7 +415,7 @@ public class TemperatureResource {
 		
 		HttpEntity<String> entity = new HttpEntity<String>(body, headers);		
 		String url = "http://127.0.0.1:8080/~/in-cse/in-name/insaRoomsAE/room"
-				+ room + "CT/room" + room + "ActuatorsCT/window" + id;
+				+ room + "CT/room" + room + "ActuatorsCT/radiator" + id;
 		
 		ResponseEntity<String> response = rt.exchange(url, HttpMethod.POST, entity, String.class);
 		String resp = (String)response.getBody();

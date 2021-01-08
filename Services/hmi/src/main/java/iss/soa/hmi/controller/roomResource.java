@@ -67,4 +67,19 @@ public class roomResource {
 		String resp = (String)response.getBody();
 		return resp;
 	}
+	
+	/**
+	 * Reset all rooms
+	 * @return
+	 */
+	@GetMapping(value = "/room/reset", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String roomReset(){
+		String resp = "";
+		for(int i=1; i<=3; i++){
+			String room = ""; room += i;
+			roomDelete(room);
+			resp += roomCreate(room);
+		}
+		return resp;
+	}
 }
