@@ -160,10 +160,7 @@ public class HmiApplication {
 								}
 							}
 						} else {
-							Hmi.log += "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
-									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
-									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
-									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! ";
+							Hmi.log += "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! \n";
 						}
 					}
 				}
