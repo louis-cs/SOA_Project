@@ -18,33 +18,10 @@ public class Hmi {
 	public ResponseEntity<String> uiResp;
 	public String log;
 
-	/*
-	 * OM2M values
-	 */
-	public int lum;
-	public boolean presence;
-	public int inside;
-	public int outside;
-	public boolean led;
-	public boolean door;
-	public boolean alarm;
-	public boolean radiator;
-	public boolean window;
-
 	/**
-	 * root URLs of resources
+	 * MAP: OM2M devices
 	 */
-	public String lights = "http://localhost:8082/light";
-	public String movements = "http://localhost:8083/movement";
-	public String temperatureInside = "http://localhost:8081/temperature/inside";
-	public String temperatureOutside = "http://localhost:8081/temperature/outside";
-	public String leds = "http://localhost:8082/led";
-	public String doors = "http://localhost:8083/door";
-	public String alarms = "http://localhost:8083/alarm";
-	public String radiators = "http://localhost:8081/radiator";
-	public String windows = "http://localhost:8081/window";
-
-	public Map<String, String> devices = new HashMap<String, String>();
+	public Map<String, Device> devices = new HashMap<String, Device>();
 
 	////////////////////////////////////////
 	////////////////////////////////////////
@@ -53,6 +30,16 @@ public class Hmi {
 		loop = false;
 		ui = "Basic User Interface...";
 		time = LocalTime.now();
+
+		devices.put("light", new Device("http://localhost:8082/light", false, 300, false, false));
+		devices.put("temperatureInside", new Device("http://localhost:8081/temperature/inside", false, 21, false, false));
+		devices.put("temperatureOutside", new Device("http://localhost:8081/temperature/outside", false, 19, false, false));
+		devices.put("movement", new Device("http://localhost:8083/movement", true, 0, false, false));
+		devices.put("led", new Device("http://localhost:8082/led", true, 0, true, true));
+		devices.put("door", new Device("http://localhost:8083/door", true, 0, false, true));
+		devices.put("alarm", new Device("http://localhost:8083/alarm", true, 0, false, false));
+		devices.put("radiator", new Device("http://localhost:8081/radiator", true, 0, false, true));
+		devices.put("window", new Device("http://localhost:8081/window", true, 0, false, true));
 	}
 
 	public boolean getLoop() {
@@ -78,14 +65,6 @@ public class Hmi {
 	/*
 	 * URIs for each resource
 	 */
-	// public String get(String room, String id) {
-	// return "?room=" + room + "&id=" + id;
-	// }
-	//
-	// public String set(String room, String id, String val) {
-	// return "/set?room=" + room + "&id=" + id + "&val=" + val;
-	// }
-
 	public String get(String room, String id) {
 		return String.format("?room=%s&id=%s", room, id);
 	}
@@ -107,43 +86,23 @@ public class Hmi {
 	 */
 	public String getAllOM2M(RestTemplate rt, String room, String id) {
 		String uri, gui;
-		gui = "	OM2M - Room:" + room + " Device:" + id + " Time:" + time + "\nSensors -> ";
-		uri = this.lights + this.get(room, "");
-		ResponseEntity<Integer> intResponse = rt.getForEntity(uri, int.class);
-		this.lum = (int) intResponse.getBody();
-		gui += "Luminosity: " + this.lum;
-		uri = this.movements + this.get(room, "");
-		ResponseEntity<Boolean> boolResponse = rt.getForEntity(uri, boolean.class);
-		this.presence = (boolean) boolResponse.getBody();
-		gui += " | Presence: " + this.presence;
-		uri = this.temperatureInside + this.get(room, "");
-		intResponse = rt.getForEntity(uri, int.class);
-		this.inside = (int) intResponse.getBody();
-		gui += " | Temperature Inside: " + this.inside;
-		uri = this.temperatureOutside + this.get(room, "");
-		intResponse = rt.getForEntity(uri, int.class);
-		this.outside = (int) intResponse.getBody();
-		gui += " | Temperature Outside: " + this.outside;
-		uri = this.leds + this.get(room, id);
-		boolResponse = rt.getForEntity(uri, boolean.class);
-		this.led = (boolean) boolResponse.getBody();
-		gui += "\nActuators -> Led: " + this.led;
-		uri = this.alarms + this.get(room, "");
-		boolResponse = rt.getForEntity(uri, boolean.class);
-		this.alarm = (boolean) boolResponse.getBody();
-		gui += " | Alarm: " + this.alarm;
-		uri = this.doors + this.get(room, id);
-		boolResponse = rt.getForEntity(uri, boolean.class);
-		this.door = (boolean) boolResponse.getBody();
-		gui += " | Door: " + this.door;
-		uri = this.windows + this.get(room, id);
-		boolResponse = rt.getForEntity(uri, boolean.class);
-		this.window = (boolean) boolResponse.getBody();
-		gui += " | Window: " + this.window;
-		uri = this.radiators + this.get(room, id);
-		boolResponse = rt.getForEntity(uri, boolean.class);
-		this.radiator = (boolean) boolResponse.getBody();
-		gui += " | Radiator: " + this.radiator + "\n";
+		gui = "	OM2M - Room:" + room + " Device:" + id + " Time:" + time + "\nDevices -> ";
+		for (String deviceKey : devices.keySet()) {
+			Device device = devices.get(deviceKey);
+			uri = device.url;
+			if (device.hasId) {
+				uri += this.get(room, id);
+			} else {
+				uri += this.get(room, "");
+			}
+			if (device.isBool) {
+				device.state = (boolean) rt.getForEntity(uri, boolean.class).getBody();
+				gui += deviceKey + ": " + device.state + " | ";
+			} else {
+				device.value = (int) rt.getForEntity(uri, int.class).getBody();
+				gui += deviceKey + ": " + device.value + " | ";
+			}
+		}
 		return gui;
 	}
 }

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import iss.soa.hmi.model.Device;
 import iss.soa.hmi.model.Hmi;
 
 @RestController
@@ -33,9 +34,13 @@ public class HmiResource {
 	}
 
 	@GetMapping("/alarm")
-	public String alarm(@RequestParam String room, @RequestParam String id) {
+	public String alarm() {
+		String resp = "";
 		RestTemplate rt = new RestTemplate();
-		return (String) rt.getForEntity(hmi.alarms + hmi.set(room, id, "false"), String.class).getBody();
+		for (int room = 1; room <= 3; room++) {
+			resp += rt.getForEntity(hmi.devices.get("alarm").url + hmi.set(String.valueOf(room), "", "false"), String.class).getBody();
+		}
+		return resp;
 	}
 
 	/**
@@ -44,11 +49,12 @@ public class HmiResource {
 	 * @param t
 	 * @return
 	 */
-	@GetMapping("/time")
-	public LocalTime time(@RequestParam int h, @RequestParam int m) {
+	@GetMapping("/time/{h}/{m}")
+	public LocalTime time(@PathVariable int h, @PathVariable int m) {
 		Hmi.time = LocalTime.of(h, m);
 		return Hmi.time;
 	}
+
 	///////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////
 
@@ -59,13 +65,9 @@ public class HmiResource {
 	 */
 	@GetMapping(produces = MediaType.TEXT_PLAIN_VALUE)
 	public String ui() {
-		String log = "\n________________________________________________________\n" 
-				+ "\n		OM2M action log"
-				+ "\n________________________________________________________\n";
-		hmi.appendUi(log);
-		hmi.appendUi(hmi.log);
-		hmi.log = "";
-		return hmi.getUi();
+		String log = hmi.getUi() + "\n________________________________________________________\n"
+				+ "\n		OM2M action log" + "\n________________________________________________________\n" + hmi.log;
+		return log;
 	}
 
 	///////////////////////////////////////////////////////////////////////
@@ -101,42 +103,26 @@ public class HmiResource {
 
 	@GetMapping(value = "/reset", produces = MediaType.TEXT_PLAIN_VALUE)
 	public String reset() {
-		String uri, gui = "";
-		ResponseEntity<String> Response;
+		String uri = "", gui = "";
 		RestTemplate rt = new RestTemplate();
-		for (int i = 1; i < 4; i++) {
-			String room = "";
-			room += i;
-			uri = hmi.lights + hmi.set(room, "", "300");
-			Response = rt.getForEntity(uri, String.class);
-			gui += Response.getBody();
-			uri = hmi.movements + hmi.set(room, "", "true");
-			Response = rt.getForEntity(uri, String.class);
-			gui += Response.getBody();
-			uri = hmi.temperatureInside + hmi.set(room, "", "21");
-			Response = rt.getForEntity(uri, String.class);
-			gui += Response.getBody();
-			uri = hmi.temperatureOutside + hmi.set(room, "", "19");
-			Response = rt.getForEntity(uri, String.class);
-			gui += Response.getBody();
-			uri = hmi.alarms + hmi.set(room, "", "false");
-			Response = rt.getForEntity(uri, String.class);
-			gui += Response.getBody();
-			for (int j = 1; j <= i; j++) {
-				String id = "";
-				id += j;
-				uri = hmi.leds + hmi.set(room, id, "false");
-				Response = rt.getForEntity(uri, String.class);
-				gui += Response.getBody();
-				uri = hmi.doors + hmi.set(room, id, "false");
-				Response = rt.getForEntity(uri, String.class);
-				gui += Response.getBody();
-				uri = hmi.windows + hmi.set(room, id, "false");
-				Response = rt.getForEntity(uri, String.class);
-				gui += Response.getBody();
-				uri = hmi.radiators + hmi.set(room, id, "false");
-				Response = rt.getForEntity(uri, String.class);
-				gui += Response.getBody();
+		for (String deviceKey : hmi.devices.keySet()) {
+			Device device = hmi.devices.get(deviceKey);
+			for (int room = 1; room <= 3; room++) {
+				if (device.isBool) {
+					for (int id = 1; id <= room; id++) {
+						if (device.hasId) {
+							uri = device.url
+									+ hmi.set(String.valueOf(room), String.valueOf(id), String.valueOf(device.state));
+						} else {
+							uri = device.url + hmi.set(String.valueOf(room), "", String.valueOf(device.state));
+
+						}
+						gui += rt.getForEntity(uri, String.class).getBody();
+					}
+				} else {
+					uri = device.url + hmi.set(Integer.toString(room), "", Integer.toString(device.value));
+				}
+				gui += rt.getForEntity(uri, String.class).getBody();
 			}
 		}
 		return gui;
