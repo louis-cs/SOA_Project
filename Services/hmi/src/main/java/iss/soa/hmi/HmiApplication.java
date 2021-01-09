@@ -20,6 +20,9 @@ public class HmiApplication {
 		Hmi hmi = new Hmi();
 		RestTemplate rt = new RestTemplate();
 
+		int lum, inside, outside;
+		boolean presence, alarm, window, door, radiator, led;
+
 		// autom
 		while (true) {
 			try {
@@ -32,116 +35,132 @@ public class HmiApplication {
 			if (hmi.getLoop()) {
 				hmi.clearUi();
 				// for every room
-				for (int i = 1; i <= 3; i++) {
-					String room = "";
-					room += i;
+				for (int room = 1; room <= 3; room++) {
 					// for every device
-					for (int j = 1; j <= i; j++) {
-						String id = "";
-						id += j;
+					for (int id = 1; id <= room; id++) {
 
 						// httpGET all OM2M values
-						hmi.appendUi(hmi.getAllOM2M(rt, room, id));
+						hmi.appendUi(hmi.getAllOM2M(rt, String.valueOf(room), String.valueOf(id)));
+
+						alarm = hmi.devices.get("alarm").state;
+						presence = hmi.devices.get("movement").state;
+						led = hmi.devices.get("led").state;
+						window = hmi.devices.get("window").state;
+						door = hmi.devices.get("door").state;
+						radiator = hmi.devices.get("radiator").state;
+						lum = hmi.devices.get("light").value;
+						inside = hmi.devices.get("temperatureInside").value;
+						outside = hmi.devices.get("temperatureOutside").value;
 
 						// time - alarm
-						if (!hmi.devices.get("alarm").state) {
+						if (!alarm) {
 							// outside operating time
 							if (Hmi.time.isAfter(LocalTime.of(22, 0)) || Hmi.time.isBefore(LocalTime.of(7, 0))) {
-								if (hmi.devices.get("movement").state) {
+								if (presence) {
 									hmi.uiResp = rt.getForEntity(
-											hmi.devices.get("alarm").url + hmi.set(room, "", "true"), String.class);
-									hmi.log += "\n	Room(" + room + ") -	ALARM - ON	|	" + hmi.uiResp.getBody();
+											hmi.devices.get("alarm").url + hmi.set(String.valueOf(room), "", "true"),
+											String.class);
+									Hmi.log += "\n	Room(" + room + ") -	ALARM - ON";
 								} else {
-									// window
-									if (hmi.devices.get("window").state) {
+									// led
+									if (led) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("window").url + hmi.set(room, id, "false"),
+												hmi.devices.get("led").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE	|	"
-												+ hmi.uiResp.getBody();
+										Hmi.log += "\n	Room(" + room + ") -	Led(" + id + ") - OFF";
+									}
+									// window
+									if (window) {
+										hmi.uiResp = rt.getForEntity(
+												hmi.devices.get("window").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
+												String.class);
+										Hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE";
 									}
 									// door
-									if (hmi.devices.get("door").state) {
+									if (door) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("door").url + hmi.set(room, id, "false"), String.class);
-										hmi.log += "\n	Room(" + room + ") -	Door(" + id + ") - CLOSE	|	"
-												+ hmi.uiResp.getBody();
-									}
-									// temperature
-									if (hmi.devices.get("radiator").state) {
-										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("radiator").url + hmi.set(room, id, "false"),
+												hmi.devices.get("door").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - OFF	|	"
-												+ hmi.uiResp.getBody();
+										Hmi.log += "\n	Room(" + room + ") -	Door(" + id + ") - CLOSE";
+										;
+									}
+									// radiator
+									if (radiator) {
+										hmi.uiResp = rt.getForEntity(
+												hmi.devices.get("radiator").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
+												String.class);
+										Hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - OFF";
 									}
 								}
 								// normal mode: light&temperature
 							} else {
 								// lighting
-								if (hmi.devices.get("movement").state && hmi.devices.get("light").value < 500) {
+								if (presence && lum < 500) {
 									hmi.uiResp = rt.getForEntity(
-											hmi.devices.get("light").url + hmi.set(room, id, "true"), String.class);
-									hmi.log += "\n	Room(" + room + ") -	Led(" + id + ") - ON	|	"
-											+ hmi.uiResp.getBody();
-								} else if (hmi.devices.get("light").value > 1500) {
+											hmi.devices.get("light").url
+													+ hmi.set(String.valueOf(room), String.valueOf(id), "true"),
+											String.class);
+									Hmi.log += "\n	Room(" + room + ") -	Led(" + id + ") - ON";
+								} else if (lum > 1500) {
 									hmi.uiResp = rt.getForEntity(
-											hmi.devices.get("light").url + hmi.set(room, id, "false"), String.class);
-									hmi.log += "\n	Room(" + room + ") -	Led(" + id + ") - OFF	|	"
-											+ hmi.uiResp.getBody();
+											hmi.devices.get("led").url
+													+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
+											String.class);
+									Hmi.log += "\n	Room(" + room + ") -	Led(" + id + ") - OFF";
 								}
 								// temperature
-								if (!hmi.devices.get("window").state) {
-									if (hmi.devices.get("temperatureInside").value > 24
-											&& hmi.devices.get("temperatureInside").value > hmi.devices
-													.get("temperatureOutside").value) {
+								if (!window) {
+									if (inside > 24 && inside > outside) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("window").url + hmi.set(room, id, "true"),
+												hmi.devices.get("window").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "true"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - OPEN	|	"
-												+ hmi.uiResp.getBody();
-									} else if (hmi.devices.get("temperatureInside").value < 19
-											&& hmi.devices.get("temperatureInside").value < hmi.devices
-													.get("temperatureOutside").value) {
+										Hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - OPEN";
+									} else if (inside < 19 && inside < outside) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("window").url + hmi.set(room, id, "true"),
+												hmi.devices.get("window").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "true"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - OPEN	|	"
-												+ hmi.uiResp.getBody();
+										Hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - OPEN";
 									}
 								}
-								if (hmi.devices.get("window").state) {
-									if (hmi.devices.get("temperatureInside").value < 19
-											&& hmi.devices.get("temperatureOutside").value < 19) {
+								if (window) {
+									if (inside < 19 && outside < 19) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("window").url + hmi.set(room, id, "false"),
+												hmi.devices.get("window").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE	|	"
-												+ hmi.uiResp.getBody();
+										Hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE";
 										// radiator
+										if (!radiator) {
+											hmi.uiResp = rt.getForEntity(
+													hmi.devices.get("radiator").url
+															+ hmi.set(String.valueOf(room), String.valueOf(id), "true"),
+													String.class);
+											Hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - ON";
+										}
+									} else if (inside > 24 && outside > 24) {
 										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("radiator").url + hmi.set(room, id, "true"),
+												hmi.devices.get("window").url
+														+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
 												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - ON	|	"
-												+ hmi.uiResp.getBody();
-									} else if (hmi.devices.get("temperatureInside").value > 24
-											&& hmi.devices.get("temperatureOutside").value > 24) {
-										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("window").url + hmi.set(room, id, "false"),
-												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE	|	"
-												+ hmi.uiResp.getBody();
+										Hmi.log += "\n	Room(" + room + ") -	Window(" + id + ") - CLOSE";
 										// radiator
-										hmi.uiResp = rt.getForEntity(
-												hmi.devices.get("radiator").url + hmi.set(room, id, "false"),
-												String.class);
-										hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - OFF	|	"
-												+ hmi.uiResp.getBody();
+										if (radiator) {
+											hmi.uiResp = rt.getForEntity(hmi.devices.get("radiator").url
+													+ hmi.set(String.valueOf(room), String.valueOf(id), "false"),
+													String.class);
+											Hmi.log += "\n	Room(" + room + ") -	Radiator(" + id + ") - OFF";
+										}
 									}
 								}
 							}
 						} else {
-							hmi.log = "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
+							Hmi.log += "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
 									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
 									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! "
 									+ "\n !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! !!!! ALARM !!!! ";

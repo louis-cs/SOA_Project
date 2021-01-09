@@ -9,14 +9,14 @@ import java.util.Map;
 public class Hmi {
 
 	private static boolean loop;
-	private static String ui;
 	public static LocalTime time;
 
 	/*
 	 * UI additional log information
 	 */
 	public ResponseEntity<String> uiResp;
-	public String log;
+	private static String ui;
+	public static String log;
 
 	/**
 	 * MAP: OM2M devices
@@ -34,12 +34,12 @@ public class Hmi {
 		devices.put("light", new Device("http://localhost:8082/light", false, 300, false, false));
 		devices.put("temperatureInside", new Device("http://localhost:8081/temperature/inside", false, 21, false, false));
 		devices.put("temperatureOutside", new Device("http://localhost:8081/temperature/outside", false, 19, false, false));
+		devices.put("alarm", new Device("http://localhost:8083/alarm", true, 0, false, false));
 		devices.put("movement", new Device("http://localhost:8083/movement", true, 0, false, false));
 		devices.put("led", new Device("http://localhost:8082/led", true, 0, true, true));
-		devices.put("door", new Device("http://localhost:8083/door", true, 0, false, true));
-		devices.put("alarm", new Device("http://localhost:8083/alarm", true, 0, false, false));
-		devices.put("radiator", new Device("http://localhost:8081/radiator", true, 0, false, true));
-		devices.put("window", new Device("http://localhost:8081/window", true, 0, false, true));
+		devices.put("door", new Device("http://localhost:8083/door", true, 0, true, true));
+		devices.put("radiator", new Device("http://localhost:8081/radiator", true, 0, true, true));
+		devices.put("window", new Device("http://localhost:8081/window", true, 0, true, true));
 	}
 
 	public boolean getLoop() {
